@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator by Serega</title>
+</head>
+<body>
+    <div>
+        <label for="length">Длина Пароля:</label>
+        <input type="number" id="length" value="12" min="4" max="20" />
+        <br>
+        <input type="checkbox" id="include-lowercase" checked/>
+        <label for="include-lowercase">Строчные буквы (a-z)</label>
+        <br>
+        <input type="checkbox" id="include-uppercase" checked/>
+        <label for="include-uppercase">Заглавные буквы (A-Z)</label>
+        <br>
+        <input type="checkbox" id="include-numbers" checked/>
+        <label for="include-numbers">Цифры (0-9)</label>
+        <br>
+        <input type="checkbox" id="include-symbols" checked/>
+        <label for="include-symbols">Специальные символы (!@#$%^&*)</label>
+        <br>
+        <button onclick="GeneratePassword()">Сгенерировать с данными настройками</button>
+        <p>Сгенерированный пароль: <span id="password"></span></p>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
